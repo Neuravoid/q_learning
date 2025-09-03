@@ -11,16 +11,12 @@ A concise, reproducible implementation of tabular Q-Learning on the FrozenLake-v
 ### Repository Structure
 - `final.ipynb`: End-to-end notebook (setup, training, evaluation, plots)
 - `readme.MD`: Project overview and usage guide (this file)
+ - `requirements.txt`: Python dependencies for reproducible setup
 
 ### Requirements
 - Python 3.9+ (3.10/3.11 recommended)
 - Windows PowerShell or any terminal
-
-Python packages (install via pip):
-- `gymnasium`
-- `numpy`
-- `matplotlib`
-- `tqdm` (optional, if progress bars are used)
+- Dependencies listed in `requirements.txt`
 
 ### Quickstart (Windows PowerShell)
 ```powershell
@@ -30,14 +26,12 @@ python -m venv .venv
 
 # 2) Upgrade pip and install dependencies
 python -m pip install --upgrade pip
-pip install gymnasium numpy matplotlib tqdm
+pip install -r requirements.txt
 
-# 3) Launch Jupyter (if you prefer the classic UI)
-pip install notebook
+# 3) Launch Jupyter (classic UI)
 jupyter notebook final.ipynb
 
 # Or use JupyterLab
-pip install jupyterlab
 jupyter lab final.ipynb
 ```
 
